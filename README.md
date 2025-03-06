@@ -69,7 +69,21 @@ A complexidade desse método é O(log2 n)
 
 ### Organização (Sort)
 
-No arquivo [Sorting.java](./src/main/java/com/eduardo/Sorting.java)
+No arquivo [Sorting.java](./src/main/java/com/eduardo/Sorting.java) estão reunidos 5 métodos de organização diferentes, dentre eles: **BubbleSort**, **SelectionSort**, **InsertSort**, **QuickSort** e **MergeSort**. Abaixo estão as características de cada método.
+
+```.java
+public static void bubbleSort(int[] nums)
+public static void selectionSort(int[] nums)
+public static void insertionSort(int[] nums)
+
+public static void quickSort(int[] nums, int low, int high)
+private static int partition(int[] nums, int low, int high)
+
+public static void mergeSort(int[] nums, int left, int right)
+private static void merge(int[] nums, int left, int mid, int right)
+```
+
+### BubbleSort
 
 # English
 
