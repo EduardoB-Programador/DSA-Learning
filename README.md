@@ -6,7 +6,7 @@
 |[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|||
 |[Procura](#procura-(search))||||
 |[Linear Search](#linearsearch-(português))||||
-|[Binary Search](#binarysearch)-(português)||||
+|[Binary Search](#binarysearch-(português))||||
 |[Organização](#organização-(sort))||||
 |[BubbleSort](#bubblesort-(português))||||
 |[SelectionSort](#selectionsort-(português))||||
