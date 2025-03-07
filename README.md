@@ -1,11 +1,16 @@
 # Navegação/Navigation
 
-|[Português](#português)|[English](#english)|
-|:-|:-|
-|[Visão Geral](#visão-geral)|[Overview](#overview)|
-|[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|
-|[Linear Search](#linearsearch)||
-|[Binary Search](#binarysearch)||
+|[Português](#português)|[English](#english)|[Português](#português)|[English](#english)|
+|:-|:-|:-|:-|
+|[Visão Geral](#visão-geral)|[Overview](#overview)|[InsertionSort](#insertionsort-(português))||
+|[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|||
+|[Procura](#procura-(search))||||
+|[Linear Search](#linearsearch-(português))||||
+|[Binary Search](#binarysearch)-(português)||||
+|[Organização](#organização-(sort))||||
+|[BubbleSort](#bubblesort-(português))||||
+|[SelectionSort](#selectionsort-(português))||||
+
 
 # Português
 
@@ -40,7 +45,7 @@ public static int binarySort(int[] nums, int target)
 public static int binarySortRecursive(int[] nums, int target, int left, int right)
 ```
 
-### LinearSearch
+### LinearSearch (português)
 
 ```.java
 public static int linearSearch(int[] nums, int target)
@@ -50,9 +55,9 @@ O algoritmo **Linear Search** passa por cada um dos itens de uma array com o obj
 
 Importante dizer que no código existe uma variável **step**, onde ela conta a quantidade de iterações para encontrar o *target*.
 
-A complexidade desse método é O(n)
+A complexidade temporal desse método é O(n)
 
-### BinarySearch
+### BinarySearch (português)
 
 ```.java
 public static int binarySort(int[] nums, int target)
@@ -65,7 +70,7 @@ Novamente, temos a variável step marcando a quantidade de iterações até que 
 
 Existe também o método BinarySearchRecursive, onde, ao invés de iterações temos recurções, mas na sua base os métodos funcionam da mesma forma.
 
-A complexidade desse método é O(log2 n)
+A complexidade temporal desse método é O(log2 n)
 
 ### Organização (Sort)
 
@@ -83,7 +88,27 @@ public static void mergeSort(int[] nums, int left, int right)
 private static void merge(int[] nums, int left, int mid, int right)
 ```
 
-### BubbleSort
+### BubbleSort (português)
+
+```.java
+public static void bubbleSort(int[] nums)
+```
+
+O algoritmo **Bubble Sort** é um dos mais simples de se executar, a forma que ele funciona consiste em 2 loops, o primeiro tem o objetivo de passar pela array pela mesma quantidade de valores que ela possui, conferindo assim, que ela não esteja organizada pela metade. Já o segundo loop é onde é realizada as comparações que vão organizar a array. A princípio esse algoritmo compara os valores **índice** e **índice+1**, caso o valor de **índice** seja maior que seu sucessor, os valores trocam, caso não seja nada acontece. Isso ocorre até a última iteração do segundo loop, onde é comparado os valores do penúltimo e último índices, e ao fim da primeira iteração do primeiro loop, o último item será sempre o maior. Esse processo de colocar o maior número da parte não organizada da lista ao final se repete até a lista estar completamente organizada.
+
+A complexidade temporal desse método é O(n²)
+
+### SelectionSort (português)
+
+```.java
+public static void selectionSort(int[] nums)
+```
+
+O algoritmo **Selection Sort** também consiste em 2 loops, onde o primeiro tem o mesmo objetivo do **Bubble Sort**, que é de percorrer a array pela mesma quantidade de itens que ela possui, enquanto o segundo é onde são feitas as comparações para organizar. Fundamentalmente, esse algoritmo tem a função de identificar o maior número na array referente a parte não organizada, e colocar esse número na última posição não organizada, a forma que é feita é *selecionando* um index referente ao maior valor e comparando com cada valor da lista, caso algum valor seja maior, o index *selecionado* é trocado pelo index do valor maior, e depois de passar por toda a parte não organizada insere o valor do índice selecionado ao final.
+
+A complexidade temporal desse método é O(n²)
+
+### InsertionSort (português)
 
 # English
 
