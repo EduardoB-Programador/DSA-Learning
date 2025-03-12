@@ -4,7 +4,7 @@
 |:-|:-|:-|:-|
 |[Visão Geral](#visão-geral)|[Overview](#overview)|[InsertionSort](#insertionsort-pt)||
 |[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|[QuickSort](#quicksort-pt)||
-|[Procura](#procura)||||
+|[Procura](#procura)||[MergeSort](#mergesort-pt)||
 |[Linear Search](#linearsearch-pt)||||
 |[Binary Search](#binarysearch-pt)||||
 |[Organização](#organizacao)||||
@@ -129,6 +129,10 @@ private static int partition(int[] nums, int low, int high)
 ```
 
 O algoritmo **Quick Sort** é o primeiro que utiliza de 2 métodos para realizá-lo, esse algoritmo recebe uma array (como todos os outros) e nesse caso, também recebe o intervalo representado por `int low` e `int high`, que são respectivamente o primeiro índice e o último índice. Fundamentalmente, esse algoritmo funciona selecionando um valor dessa array como pivô e então separando todos os valores menores que este pivô e colocando para a esquerda e os valores maiores à direita, tudo isso sem organizar a array de nenhuma forma, o algoritmo faz isso para encontrar a posição final desse pivô e depois de colocar todos os valores para o lado correto ele coloca o pivô na posição final dele. Depois disso, ele particiona a array em 2 e faz o mesmo processo de selecionar um pivô e separar valores maiores e menores que ele para encontrar o valor final dele, e depois particiona a array em 2 novamente. Importante pontuar é que a array não é realmente particionada, mas os ponteiros se movem de acordo com o intervalo **low** e **high** passados.
+
+A complexidade temporal desse método é O(n • log2 n) na maioria dos casos, e O(n²) no pior dos casos (onde a array ocasionalmente já esteja organizada).
+
+### MergeSort pt
 
 # English
 
