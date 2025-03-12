@@ -4,7 +4,7 @@
 |:-|:-|:-|:-|
 |[Visão Geral](#visão-geral)|[Overview](#overview)|[InsertionSort](#insertionsort-pt)||
 |[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|||
-|[Procura](#procura/Search)||||
+|[Procura](#procura\/Search)||||
 |[Linear Search](#linearsearch-pt)||||
 |[Binary Search](#binarysearch-pt)||||
 |[Organização](#organização-(sort))||||
