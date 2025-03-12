@@ -2,14 +2,14 @@
 
 |[Português](#português)|[English](#english)|[Português](#português)|[English](#english)|
 |:-|:-|:-|:-|
-|[Visão Geral](#visão-geral)|[Overview](#overview)|[InsertionSort](#insertionsort-(português))||
+|[Visão Geral](#visão-geral)|[Overview](#overview)|[InsertionSort](#insertionsort-pt)||
 |[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|||
-|[Procura](#procura-(search))||||
-|[Linear Search](#linearsearch-(português))||||
-|[Binary Search](#binarysearch-(português))||||
+|[Procura](#procura/Search)||||
+|[Linear Search](#linearsearch-pt)||||
+|[Binary Search](#binarysearch-pt)||||
 |[Organização](#organização-(sort))||||
-|[BubbleSort](#bubblesort-(português))||||
-|[SelectionSort](#selectionsort-(português))||||
+|[BubbleSort](#bubblesort-pt)||||
+|[SelectionSort](#selectionsort-pt)||||
 
 
 # Português
@@ -35,7 +35,7 @@ Enquanto as estruturas de dados se encontram em:
 
 ## Algoritmos
 
-### Procura (Search)
+### Procura/Search
 
 No arquivo [Searching.java](./src/main/java/com/eduardo/Searching.java) temos 3 métodos referentes a algorimos de procura, onde 2 são referentes a **Binary Search** enquanto o outro faz referência à **Linear Search**. Abaixo estão as características dos métodos:
 
@@ -45,7 +45,7 @@ public static int binarySort(int[] nums, int target)
 public static int binarySortRecursive(int[] nums, int target, int left, int right)
 ```
 
-### LinearSearch (português)
+### LinearSearch pt
 
 ```.java
 public static int linearSearch(int[] nums, int target)
@@ -72,7 +72,7 @@ Existe também o método BinarySearchRecursive, onde, ao invés de iterações t
 
 A complexidade temporal desse método é O(log2 n)
 
-### Organização (Sort)
+### Organização/Sort
 
 No arquivo [Sorting.java](./src/main/java/com/eduardo/Sorting.java) estão reunidos 5 métodos de organização diferentes, dentre eles: **BubbleSort**, **SelectionSort**, **InsertSort**, **QuickSort** e **MergeSort**. Abaixo estão as características de cada método.
 
@@ -88,7 +88,7 @@ public static void mergeSort(int[] nums, int left, int right)
 private static void merge(int[] nums, int left, int mid, int right)
 ```
 
-### BubbleSort (português)
+### BubbleSort pt
 
 ```.java
 public static void bubbleSort(int[] nums)
@@ -98,7 +98,7 @@ O algoritmo **Bubble Sort** é um dos mais simples de se executar, a forma que e
 
 A complexidade temporal desse método é O(n²)
 
-### SelectionSort (português)
+### SelectionSort pt
 
 ```.java
 public static void selectionSort(int[] nums)
@@ -108,7 +108,15 @@ O algoritmo **Selection Sort** também consiste em 2 loops, onde o primeiro tem 
 
 A complexidade temporal desse método é O(n²)
 
-### InsertionSort (português)
+### InsertionSort pt
+
+```.java
+public static void insertionSort(int[] nums)
+```
+
+O algoritmo **Insertion Sort** também consiste em 2 loops como os anteriores, o primeiro loop serve para percorrer a array e também para *selecionar* o valor a ser *inserido*. E então, no segundo loop, ele percorre a array de trás pra frente desde o índice do valor selecionado até encontrar um valor menor que o valor selecionado e inseri-lo 1 índice a mais que o valor menor que ele. Uma coisa interessante sobre esse algoritmo é que ele não precisa percorrer toda a array de novo para conseguir organizar caso um novo valor entre no final, ele seleciona o valor final (que não faz parte da parcela da array que está já organizada) e *insere* ele 1 posição após o número que seja menor que ele.
+
+A complexidade temporal desse método é O(n²), mas no melhor dos casos (caso a lista aleatoriamente seja criada em ordem crescente) pode chegar à O(n).
 
 # English
 
