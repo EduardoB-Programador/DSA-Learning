@@ -4,7 +4,7 @@
 |:-|:-|:-|:-|
 |[Visão Geral](#visão-geral)|[Overview](#overview)|[InsertionSort](#insertionsort-pt)||
 |[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|||
-|[Procura](#procura/search)||||
+|[Procura](#procura)||||
 |[Linear Search](#linearsearch-pt)||||
 |[Binary Search](#binarysearch-pt)||||
 |[Organização](#organização/sort)||||
@@ -35,6 +35,7 @@ Enquanto as estruturas de dados se encontram em:
 
 ## Algoritmos
 
+<a id="procura"></a>
 ### Procura/Search
 
 No arquivo [Searching.java](./src/main/java/com/eduardo/Searching.java) temos 3 métodos referentes a algorimos de procura, onde 2 são referentes a **Binary Search** enquanto o outro faz referência à **Linear Search**. Abaixo estão as características dos métodos:
@@ -43,6 +44,7 @@ No arquivo [Searching.java](./src/main/java/com/eduardo/Searching.java) temos 3 
 public static int linearSearch(int[] nums, int target)
 public static int binarySort(int[] nums, int target)
 public static int binarySortRecursive(int[] nums, int target, int left, int right)
+//Acabei de perceber que esse último método está como "sort", não como search que é o que deveria estar escrito, mas pelo motivo de no arquivo original estar da mesma forma eu deixarei assim
 ```
 
 ### LinearSearch pt
