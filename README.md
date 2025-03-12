@@ -7,7 +7,7 @@
 |[Procura](#procura)||||
 |[Linear Search](#linearsearch-pt)||||
 |[Binary Search](#binarysearch-pt)||||
-|[Organização](#organização/sort)||||
+|[Organização](#organizacao)||||
 |[BubbleSort](#bubblesort-pt)||||
 |[SelectionSort](#selectionsort-pt)||||
 
@@ -74,6 +74,7 @@ Existe também o método BinarySearchRecursive, onde, ao invés de iterações t
 
 A complexidade temporal desse método é O(log2 n)
 
+<a id="organizacao"></a>
 ### Organização/Sort
 
 No arquivo [Sorting.java](./src/main/java/com/eduardo/Sorting.java) estão reunidos 5 métodos de organização diferentes, dentre eles: **BubbleSort**, **SelectionSort**, **InsertSort**, **QuickSort** e **MergeSort**. Abaixo estão as características de cada método.
