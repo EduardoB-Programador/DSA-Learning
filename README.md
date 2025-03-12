@@ -3,7 +3,7 @@
 |[Português](#português)|[English](#english)|[Português](#português)|[English](#english)|
 |:-|:-|:-|:-|
 |[Visão Geral](#visão-geral)|[Overview](#overview)|[InsertionSort](#insertionsort-pt)||
-|[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|||
+|[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|[[QuickSort](#quicksort-pt)||
 |[Procura](#procura)||||
 |[Linear Search](#linearsearch-pt)||||
 |[Binary Search](#binarysearch-pt)||||
@@ -120,6 +120,15 @@ public static void insertionSort(int[] nums)
 O algoritmo **Insertion Sort** também consiste em 2 loops como os anteriores, o primeiro loop serve para percorrer a array e também para *selecionar* o valor a ser *inserido*. E então, no segundo loop, ele percorre a array de trás pra frente desde o índice do valor selecionado até encontrar um valor menor que o valor selecionado e inseri-lo 1 índice a mais que o valor menor que ele. Uma coisa interessante sobre esse algoritmo é que ele não precisa percorrer toda a array de novo para conseguir organizar caso um novo valor entre no final, ele seleciona o valor final (que não faz parte da parcela da array que está já organizada) e *insere* ele 1 posição após o número que seja menor que ele.
 
 A complexidade temporal desse método é O(n²), mas no melhor dos casos (caso a lista aleatoriamente seja criada em ordem crescente) pode chegar à O(n).
+
+### QuickSort pt
+
+```.java
+public static void quickSort(int[] nums, int low, int high)
+private static int partition(int[] nums, int low, int high)
+```
+
+O algoritmo **Quick Sort** é o primeiro que utiliza de 2 métodos para realizá-lo, esse algoritmo recebe uma array (como todos os outros) e nesse caso, também recebe o intervalo representado por `int low` e `int high`, que são respectivamente o primeiro índice e o último índice. Fundamentalmente, esse algoritmo funciona selecionando um valor dessa array como pivô e então separando todos os valores menores que este pivô e colocando para a esquerda e os valores maiores à direita, tudo isso sem organizar a array de nenhuma forma, o algoritmo faz isso para encontrar a posição final desse pivô e depois de colocar todos os valores para o lado correto ele coloca o pivô na posição final dele. Depois disso, ele particiona a array em 2 e faz o mesmo processo de selecionar um pivô e separar valores maiores e menores que ele para encontrar o valor final dele, e depois particiona a array em 2 novamente. Importante pontuar é que a array não é realmente particionada, mas os ponteiros se movem de acordo com o intervalo **low** e **high** passados.
 
 # English
 
