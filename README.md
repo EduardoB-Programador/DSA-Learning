@@ -4,10 +4,10 @@
 |:-|:-|:-|:-|
 |[Visão Geral](#visão-geral)|[Overview](#overview)|[InsertionSort](#insertionsort-pt)||
 |[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|||
-|[Procura](#procura\/Search)||||
+|[Procura](#procura/search)||||
 |[Linear Search](#linearsearch-pt)||||
 |[Binary Search](#binarysearch-pt)||||
-|[Organização](#organização-(sort))||||
+|[Organização](#organização/sort)||||
 |[BubbleSort](#bubblesort-pt)||||
 |[SelectionSort](#selectionsort-pt)||||
 
