@@ -57,7 +57,7 @@ Importante dizer que no código existe uma variável **step**, onde ela conta a 
 
 A complexidade temporal desse método é O(n)
 
-### BinarySearch (português)
+### BinarySearch pt
 
 ```.java
 public static int binarySort(int[] nums, int target)
