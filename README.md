@@ -3,7 +3,7 @@
 |[Português](#português)|[English](#english)|[Português](#português)|[English](#english)|
 |:-|:-|:-|:-|
 |[Visão Geral](#visão-geral)|[Overview](#overview)|[InsertionSort](#insertionsort-pt)||
-|[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|[[QuickSort](#quicksort-pt)||
+|[Algoritmos](#algoritmos)|[Algorithms](#algorithms)|[QuickSort](#quicksort-pt)||
 |[Procura](#procura)||||
 |[Linear Search](#linearsearch-pt)||||
 |[Binary Search](#binarysearch-pt)||||
